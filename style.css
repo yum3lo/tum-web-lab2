@@ -1,7 +1,6 @@
 body {
     font-family: 'Zain', serif;
     line-height: 1.6;
-    color: #15291B;
 }
 
 .navbar {
@@ -21,7 +20,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    color: #15291B;
+    color: black;
 }
 
 .nav-links a {
@@ -30,7 +29,7 @@ body {
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #15291B;
+    color: black;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -51,6 +50,12 @@ body {
     text-align: center;
 }
 
+.title-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
 h1 {
     font-size: 4rem;
     color: #F8EBDE;
@@ -58,10 +63,25 @@ h1 {
     margin-bottom: 1rem;
 }
 
-p {
+.hero p {
     margin-bottom: 2rem;
     font-size: 1.4rem;
     color: #D8C4BF;
+}
+
+.rabbit-sticker {
+    position: absolute;
+    left: -130px;
+    top: -100px;
+    width: 160px;
+    height: auto;
+    transform: rotate(-5deg);
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 .order-button {
@@ -77,4 +97,82 @@ p {
 
 .order-button:hover {
     background-color: #D8C4BF;
+}
+
+.quote {
+    position: absolute;
+    right: -100px;
+    width: 200px;
+    height: auto;
+    transform: rotate(15deg);
+    transition: transform 0.3s ease;
+}
+
+.button-container:hover .quote {
+    transform: rotate(20deg);
+}
+
+.about {
+    padding: 5rem 2rem;
+    background-color: #F8EBDE;
+}
+
+.about-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tea-sticker {
+    position: absolute;
+    right: -160px;
+    top: -60px;
+    width: 160px;
+    height: auto;
+    transform: rotate(15deg);
+}
+
+.about h2 {
+    font-size: 3rem;
+    color: #774C60;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.feature h3 {
+    color: #774C60;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.feature p {
+    margin: 0;
 }
