@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Zain:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- Mascot in corners -->
     <div class="mascot top-left">
       <img src="assets/mascot.png" alt="Cheshire Cat">
       <div class="mascot-message">We're all mad about tea here!</div>
@@ -27,10 +28,15 @@
       <img src="assets/mascot.png" alt="Cheshire Cat">
       <div class="mascot-message">Click 'Order Now' or disappear down the rabbit hole!</div>
     </div>
+    <!-- Navigation bar -->
     <nav class="navbar">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <div class="logo">
         <a href="#home">Tea Garden</a>
       </div>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -38,6 +44,11 @@
         <a href="#contact">Contact</a>
       </div>
     </nav>
+    <!-- Mobile-only fixed CTA -->
+    <div class="mobile-cta">
+      <a href="#menu" class="mobile-order-button">Order Now</a>
+    </div>
+    <!-- Hero -->
     <section id="home" class="hero">
       <div class="title-container">
         <img src="assets/rabbit-sticker.png" alt="Rabbit sticker" class="rabbit-sticker">
@@ -49,6 +60,37 @@
         <img src="assets/quote.png" alt="Quote" class="quote">
       </div>
     </section>
+    <!-- Mobile-only quick selection -->
+    <section class="mobile-only-section">
+      <h2>Quick Selection</h2>
+      <div class="quick-selection-grid">
+        <a href="#menu" class="quick-selection-item">
+          <div class="quick-icon">
+            <i class="fas fa-mug-hot"></i>
+          </div>
+          <h3>Black Tea</h3>
+        </a>
+        <a href="#menu" class="quick-selection-item">
+          <div class="quick-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Green Tea</h3>
+        </a>
+        <a href="#menu" class="quick-selection-item">
+          <div class="quick-icon">
+            <i class="fas fa-mortar-pestle"></i>
+          </div>
+          <h3>Herbal</h3>
+        </a>
+        <a href="#menu" class="quick-selection-item">
+          <div class="quick-icon">
+            <i class="fas fa-fire"></i>
+          </div>
+          <h3>Chai</h3>
+        </a>
+      </div>
+    </section>
+    <!-- About -->
     <section id="about" class="about">
       <div class="about-content">
         <div class="about-title">
@@ -72,6 +114,7 @@
         </div>
       </div>
     </section>
+    <!-- Menu -->
     <section id="menu" class="menu">
       <h2>Our Selection</h2>
       <div class="tea-grid">
@@ -117,6 +160,7 @@
         </div>
       </div>
     </section>
+    <!-- Contact -->
     <section id="contact" class="contact">
       <h2>Visit Our Tea House</h2>
       <div class="contact-container">
