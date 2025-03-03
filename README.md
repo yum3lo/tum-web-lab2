@@ -30,7 +30,7 @@ Contact Section
 
 ## Live Demo
 
-https://github.com/user-attachments/assets/0398ebba-413e-43db-ae53-264d372dda76
+https://github.com/user-attachments/assets/bc7d0187-9f54-4f96-9ce1-379a623a6c27
 
 ## Development
 
