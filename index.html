@@ -6,27 +6,16 @@
     <title>Tea Garden</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zain:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Mascot in corners -->
-    <div class="mascot top-left">
+    <!-- Mascot in bottom-left corner -->
+    <div class="mascot">
       <img src="assets/mascot.png" alt="Cheshire Cat">
       <div class="mascot-message">We're all mad about tea here!</div>
-    </div>
-    <div class="mascot top-right">
-      <img src="assets/mascot.png" alt="Cheshire Cat">
-      <div class="mascot-message">Have you tried our Wonderland Blend?</div>
-    </div>
-    <div class="mascot bottom-left">
-      <img src="assets/mascot.png" alt="Cheshire Cat">
-      <div class="mascot-message">Every adventure requires a first cup...</div>
-    </div>
-    <div class="mascot bottom-right">
-      <img src="assets/mascot.png" alt="Cheshire Cat">
-      <div class="mascot-message">Click 'Order Now' or disappear down the rabbit hole!</div>
     </div>
     <!-- Navigation bar -->
     <nav class="navbar">
@@ -48,8 +37,8 @@
     <div class="mobile-cta">
       <a href="#menu" class="mobile-order-button">Order Now</a>
     </div>
-    <!-- Hero -->
-    <section id="home" class="hero">
+    <!-- Home -->
+    <section id="home" class="home">
       <div class="title-container">
         <img src="assets/rabbit-sticker.png" alt="Rabbit sticker" class="rabbit-sticker">
         <h1>Brew Happiness, One Cup at a Time</h1>
@@ -167,8 +156,10 @@
         <div class="contact-info-map">
           <div class="info-section">
             <h3>Location</h3>
-            <p>62, Rama Rd, Block B, Delhi, 110008, India</p>
-            <p>Tea Valley, TV 54321</p>
+            <div class="address-container">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>62, Rama Rd, Block B, Delhi, 110008, India</p>
+            </div>
             <p>Tel: +91 1800 532 9999</p>
             <br>
             <h3>Hours</h3>

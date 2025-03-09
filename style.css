@@ -12,6 +12,8 @@ body {
     opacity: 0;
     animation: fadeInOut 10s infinite;
     animation-delay: 3s;
+    bottom: 20px;
+    right: 20px;
 }
 
 .mascot img {
@@ -24,28 +26,10 @@ body {
     transform: scale(1.1);
 }
 
-.top-left {
-    top: 100px;
-    left: 20px;
-}
-
-.top-right {
-    top: 100px;
-    right: 20px;
-}
-
-.bottom-left {
-    bottom: 20px;
-    left: 20px;
-}
-
-.bottom-right {
-    bottom: 20px;
-    right: 20px;
-}
-
 .mascot-message {
     position: absolute;
+    right: 100%;
+    bottom: 0;
     background-color: #774C60;
     color: #F8EBDE;
     padding: 10px;
@@ -56,26 +40,6 @@ body {
     transition: opacity 0.3s ease;
     pointer-events: none;
     text-align: center;
-}
-
-.top-left .mascot-message {
-    left: 100%;
-    top: 0;
-}
-
-.top-right .mascot-message {
-    right: 100%;
-    top: 0;
-}
-
-.bottom-left .mascot-message {
-    left: 100%;
-    bottom: 0;
-}
-
-.bottom-right .mascot-message {
-    right: 100%;
-    bottom: 0;
 }
 
 .mascot:hover .mascot-message {
@@ -212,9 +176,10 @@ body {
     background-color: #D8C4BF;
 }
 
-.hero {
+.home {
     height: 100vh;
     margin-top: 5rem;
+    padding: 1rem;
     box-sizing: border-box;
     background-color: #774C60;
     display: flex;
@@ -237,7 +202,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.hero p {
+.home p {
     margin-bottom: 2rem;
     font-size: 1.4rem;
     color: #D8C4BF;
@@ -288,7 +253,7 @@ h1 {
 
 .mobile-only-section {
     display: none;
-    padding: 3rem 1.5rem;
+    padding: 1rem;
     background-color: #F8EBDE;
     text-align: center;
 }
@@ -323,7 +288,6 @@ h1 {
 .quick-icon {
     font-size: 2rem;
     color: #774C60;
-    margin-bottom: 1rem;
 }
 
 .quick-selection-item h3 {
@@ -491,6 +455,18 @@ h3 {
     text-align: left;
 }
 
+.address-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.fa-location-dot {
+    margin-right: 10px;
+    margin-top: 3px;
+    color: #774C60;
+}
+
 .map-section {
     flex: 1;
     min-height: 400px;
@@ -542,39 +518,35 @@ footer {
     .nav-toggle:checked ~ .nav-links {
         max-height: 300px;
     }
+    
+    .mascot {
+        width: 80px;
+        height: auto;
+        right: 10px;
+    }
+    
+    .mascot-message {
+        opacity: 1;
+        right: auto;
+        padding: 6px;
+        transform: translateX(-50%);
+        bottom: 100%;
+        width: 150px;
+        font-size: 12px;
+    }
 
     .features, .tea-grid, .contact-content {
         grid-template-columns: 1fr;
     }
 
-    .hero {
+    .home {
         padding: 1rem;
         height: 88vh;
     }
 
-    .hero p {
+    .home p {
         font-size: 1.2rem;
         margin-bottom: 0;
-    }
-
-    .mascot {
-        width: 80px;
-        height: auto;
-    }
-    
-    .mascot-message {
-        width: 150px;
-        font-size: 12px;
-    }
-    
-    .top-left {
-        top: 70px;
-        left: 10px;
-    }
-    
-    .top-right {
-        top: 70px;
-        right: 10px;
     }
 
     .mobile-cta {
