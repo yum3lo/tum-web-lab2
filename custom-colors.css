@@ -1,0 +1,42 @@
+:root {
+  --beige: #F8EBDE;
+  --purple: #774C60;
+  --dark-green: #15291B;
+  --dark-beige: #D8C4BF;
+}
+
+.bg-beige {
+  background-color: var(--beige);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-dark-green {
+  background-color: var(--dark-green);
+}
+
+.bg-dark-beige {
+  background-color: var(--dark-beige);
+}
+
+.text-beige {
+  color: var(--beige);
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+.text-dark-green {
+  color: var(--dark-green);
+}
+
+.text-dark-beige {
+  color: var(--dark-beige);
+}
+
+.hover\:bg-dark-beige:hover {
+  background-color: var(--dark-beige);
+}
